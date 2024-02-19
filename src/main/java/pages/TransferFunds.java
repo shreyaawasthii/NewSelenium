@@ -71,11 +71,11 @@ public class TransferFunds extends BaseTest {
 
         amountInput.sendKeys(amount);
 
-        WebElement fromAccountDropdown = driver.findElement(By.id("fromAccountId")); // Adjust the locator accordingly
+        WebElement fromAccountDropdown = driver.findElement(By.id("fromAccountId"));
         Select fromAccountDropdownSelect = new Select(fromAccountDropdown);
         fromAccountDropdownSelect.selectByValue("undefined");
 
-        WebElement toAccountDropdown = driver.findElement(By.id("toAccountId")); // Adjust the locator accordingly
+        WebElement toAccountDropdown = driver.findElement(By.id("toAccountId"));
         Select toAccountDropdownSelect = new Select(toAccountDropdown);
         toAccountDropdownSelect.selectByValue("undefined");
 
